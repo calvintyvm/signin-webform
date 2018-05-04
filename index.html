@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/submit"id="submit-form" method="post">
+        <!-- label -->
+        <label for="pic">
+        <div class="image">
+        Add an Image 
+        <input class="submitfile"type="file" name="pic" accept="image/*" id="idimage"required>
+        </label>
+        </div>
+        <label for="title">
+        <div class="title">
+        Add a Title
+        <input class="inputtext"type="text" name="title" id="idtitle"required>
+        </label>
+        </div>
+        <label for="description">
+        <div class="description">
+        Add Description
+        <textarea class="text-d" rows="4" cols="50" name="description" id="iddes"required></textarea>
+        </label>
+        </div>
+        <label for="category">
+        <div class="category">
+        Add Category
+        <select class="selectcategory" id="idselect" name="category" multiple required>
+            <option value="electronics">Electronics</option>
+            <option value="householdItems">Household Items</option>
+            <option value="musicalInstruments">Musical instruments</option>
+            <option value="physicalMedia">Physical Media</option>
+            <option value="recreationalEquipment">Recreational Equipment</option>
+            <option value="sportingGoods">Sporting Goods</option>
+            <option value="tools">Tools</option>
+        </select>
+          </label>
+        </div>
+        <div class="submitt">
+        <input class="submitbutton" type="submit" value="Submit">
+        </div>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
